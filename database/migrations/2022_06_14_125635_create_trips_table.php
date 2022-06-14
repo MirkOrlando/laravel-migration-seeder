@@ -17,8 +17,8 @@ class CreateTripsTable extends Migration
             $table->id();
             $table->string('location', 50);
             $table->decimal('price', 6, 2)->unsigned();
-            $table->tinyInteger('duration(days)')->unsigned()->nullable();
-            $table->tinyInteger('duration(nights)')->unsigned()->nullable();
+            $table->tinyInteger('duration_days')->unsigned()->nullable();
+            $table->tinyInteger('duration_nights')->unsigned()->nullable();
             $table->string('accomodation', 15)->nullable();
             $table->string('image')->nullable();
             $table->text('description')->nullable();
