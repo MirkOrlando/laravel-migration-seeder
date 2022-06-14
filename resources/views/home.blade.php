@@ -11,11 +11,23 @@
         </div>
     </div>
 
-    <div class="last_available">
+    <div class="last_availables">
         <div class="container">
-            <div class="top d-flex justify-content-between">
-                <h4>Ultimi viaggi disponibili</h4>
-                <a href="@">Vedi tutti</a>
+            <div class="top d-flex justify-content-between align-items-center">
+                <h4>Latest Available Travels</h4>
+                <a class="btn btn-outline-secondary btn-sm d-flex justify-content-center align-items-center" href="@">See All</a>
+            </div>
+            <div class="row row-cols-3 pt-3 g-4">
+                @forelse ($trips as $trip)
+                <div class="col">
+                    <div class="card h-100 d-block">
+                        <img class="card_img" src="{{$trip->image}}" alt="Title">
+                            <h5 class="card_title position-absolute m-0 p-3">{{$trip->location}}</h5>
+                    </div>
+                </div>
+                @empty
+                <p>Nothing to show</p>
+                @endforelse
             </div>
         </div>
     </div>

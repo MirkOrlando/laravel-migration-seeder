@@ -4,3 +4,23 @@
 main {
     min-height: calc(100vh - 56px - 56px);
 }
+
+.last_availables {
+    .card {
+        border: 1px solid white;
+        .card_img {
+                max-width: 100%;
+                height: 100%;
+                filter: brightness(0.9);
+                transition: filter 250ms linear;
+                &:hover {
+                    filter: brightness(0.5);
+                }
+        }
+        .card_title {
+            width: 100%;
+            top: 0;
+            color: #efefef;
+        }
+    }
+}
