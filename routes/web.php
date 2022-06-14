@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PageController@index')->name('home');
 
-Route::get('/trips', 'PageController@index')->name('trips');
+Route::get('trips', 'TripsController@index')->name('trips.index');

@@ -15,7 +15,7 @@
         <div class="container">
             <div class="top d-flex justify-content-between align-items-center">
                 <h4>Latest Available Travels</h4>
-                <a class="btn btn-outline-secondary btn-sm d-flex justify-content-center align-items-center" href="@">See All</a>
+                <a class="btn btn-outline-secondary btn-sm d-flex justify-content-center align-items-center" href="{{route('trips.index')}}">See All</a>
             </div>
             <div class="row row-cols-3 pt-3 g-4">
                 @forelse ($trips as $trip)
