@@ -14,4 +14,10 @@ class TripsController extends Controller
         return view('trips.index', compact('trips'));
     }
 
+    public function show(Trip $trip)
+    {
+        //dd($trip);
+        return view('trips.show', compact('trip'));
+    }
+
 }

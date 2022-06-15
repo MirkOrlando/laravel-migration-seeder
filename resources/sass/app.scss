@@ -1,36 +1,63 @@
 //
 @use 'bootstrap';
 
-main {
-    min-height: calc(100vh - 56px - 56px);
-}
+body {
+    background-color: #262626;
 
-.card {
-    border: 1px solid white;
-
-    .card_img {
-        max-width: 100%;
-        height: 100%;
-        filter: brightness(1);
-        transition: filter 250ms linear;
-    }
-
-    .card_title {
-        text-align: center;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-transform: uppercase;
-        color: transparent;
-        transition: color 250ms linear;
-    }
-
-    &:hover .card_title {
+    input.form-control.me-sm-2 {
         color: #efefef;
+        background-color: transparent;
+
+        &:focus {
+            border: #0d6efd40;
+        }
+
+        header {
+            border-bottom: 2px solid #efefef;
+
+        }
     }
 
-    &:hover .card_img {
-        filter: brightness(0.4);
+    main {
+        min-height: calc(100vh - 56px - 56px);
+    }
+
+    .jumbo {
+        .lead:first-child {
+            color: #efefef;
+        }
+    }
+
+    .card {
+        border: 2px solid #efefef;
+        border-radius: 1rem;
+
+        .card_img {
+            max-width: 100%;
+            height: 100%;
+            filter: brightness(1);
+            transition: filter 250ms linear;
+            border-radius: 1rem;
+        }
+
+        &:hover .card_img {
+            filter: brightness(0.4);
+        }
+
+        .card_title {
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            color: transparent;
+            transition: color 250ms linear;
+        }
+
+        &:hover .card_title {
+            color: #efefef;
+        }
+
     }
 }
