@@ -6,7 +6,7 @@
             <h1 class="display-3">Travel Agency</h1>
             <p class="lead">Welcome! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, vero!</p>
             <p class="lead">
-                <a class="btn btn-primary text-uppercase" href="Jumbo action link" role="button">Travel with us!</a>
+                <a class="btn btn-primary text-uppercase" href="{{route('trips.index')}}" role="button">Travel with us!</a>
             </p>
         </div>
     </div>
