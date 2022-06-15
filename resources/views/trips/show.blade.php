@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <section class="trip">
+    <section class="trip py-5">
         <div class="container">
             <h2 class="text-light text-center">{{ $trip->location }}</small></h2>
             <div class="row py-4 align-items-center">

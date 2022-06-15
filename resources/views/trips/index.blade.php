@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <section class="trips">
+    <section class="trips py-5">
         <div class="container">
             <h2 class="text-light">Latest Available Trips <small>(select an option)</small></h2>
             <div class="row row-cols-3 pt-3 g-4">
