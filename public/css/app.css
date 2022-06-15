@@ -12223,10 +12223,32 @@ body .card .card_title {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   color: transparent;
-  transition: color 250ms linear;
+  text-shadow: 1px 1px 0px transparent;
+  transition: all 250ms linear;
 }
 
 body .card:hover .card_title {
   color: #efefef;
+}
+
+body .card:hover .card_title:hover {
+  color: #0d6efd;
+  text-shadow: 1px 1px 0px #569aff;
+}
+
+body .trips small {
+  font-size: 1rem;
+  color: lightgray;
+}
+
+body .action {
+  gap: 1.5rem;
+}
+
+body .action .availability {
+  cursor: context-menu;
+  padding: 0.375rem;
+  text-align: center;
+  border-radius: 0.25rem;
 }
 

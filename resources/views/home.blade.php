@@ -14,7 +14,7 @@
     <div class="last_availables text-light">
         <div class="container">
             <div class="top d-flex justify-content-between align-items-center">
-                <h4>Latest Available Travels</h4>
+                <h4>Latest Available Trips</h4>
                 <a class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center" href="{{route('trips.index')}}">See All</a>
             </div>
             <div class="row row-cols-3 pt-3 g-4">
